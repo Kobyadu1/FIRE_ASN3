@@ -1,12 +1,11 @@
 import pandas as pd
 from Bio import Entrez
-Entrez.email = "kobyadu1@gmail.com"
 from Bio import Entrez, SeqIO
 
+Entrez.email = "kobyadu1@gmail.com"
 
 def _n_count(s):
     return s.count('N')
-
 
 n_count = []
 data = pd.read_csv('koby.csv')
